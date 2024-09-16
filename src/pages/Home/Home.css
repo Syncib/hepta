@@ -198,32 +198,182 @@
   color: #6c757d;
 }
 
-.home-tour {
+.home-tour,
+.home-blog {
   padding: 8rem 0;
 }
 
-.home-tour-text {
+.home-tour {
+  padding: 8rem 0 0;
+}
+
+.home-tour-text,
+.home-blog-text {
   width: 50%;
   margin: 0 auto;
   padding: 0 0 4rem;
 }
 
-.home-tour-heading {
+.home-tour-heading,
+.home-blog-heading,
+.home-customers-heading {
   font-size: 70px;
   line-height: 1;
   margin-bottom: 2rem;
 }
 
-.home-tour-para{
+.home-customers-heading {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.home-tour-para,
+.home-blog-para {
   font-size: 1.25rem;
   font-weight: 300;
   line-height: 1.8;
   color: #6c757d;
 }
 
-.home-tour-carousle{
-  width: 50%;
+.home-blog-para {
+  color: white;
+}
+.home-tour-carousel {
+  width: 55%;
   margin: 0 auto;
-  display: flex; 
+  display: flex;
   justify-content: center;
+}
+.carousel-div {
+  position: relative;
+  overflow: hidden;
+}
+.carousel-div::before {
+  content: "";
+  background-color: #65c0ba;
+  position: absolute;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  transform: skewY(-5deg) translateY(30rem);
+}
+
+.home-blog {
+  background-color: #65c0ba;
+}
+
+.home-blog-cards {
+  width: 60%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 2rem;
+}
+.home-blog-card {
+  background-color: white;
+}
+.home-blog-card img {
+  width: 100%;
+}
+.home-blog-card-text {
+  padding: 2rem;
+}
+.home-blog-card-date {
+  color: #ced4da;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+.home-blog-card-heading {
+  font-size: 26px;
+  font-weight: 500;
+  line-height: 1.2;
+  margin: 1rem 0;
+}
+.home-blog-card-para {
+  font-weight: 200;
+  font-size: 18px;
+  line-height: 1.8;
+  color: #6c757d;
+}
+
+.home-customers {
+  background-color: #fafafa;
+  padding: 8rem 0;
+}
+
+.home-customers-reviews {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 60%;
+  margin: 0 auto;
+  column-gap: 2rem;
+}
+
+.customer-img {
+  width: 4rem;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
+.customer-review-text {
+  line-height: 1.5;
+  font-family: "Mukta Mahee", arial, sans-serif;
+  font-size: 20px;
+  color: #000;
+  font-style: italic;
+}
+
+.customer-name {
+  font-weight: 200;
+  font-size: 18px;
+  line-height: 1.8;
+  color: #6c757d;
+  font-family: "Mukta Mahee", arial, sans-serif;
+  font-style: italic;
+  margin-top: 1rem;
+}
+
+.home-destination {
+  padding: 8rem 0;
+}
+
+.home-destination-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 2rem;
+  width: 60%;
+  margin: 0 auto;
+}
+
+.home-destination-text {
+  text-align: center;
+  padding-bottom: 4rem;
+}
+
+.home-destination-heading {
+  font-size: 2rem;
+}
+
+.home-destination-para {
+  font-size: 1.25rem;
+  font-weight: 300;
+  color: #6c757d;
+}
+.home-destination-img {
+  width: 100%;
+}
+
+.home-destination-ratings {
+  display: flex;
+  justify-content: space-between;
+}
+
+.home-destination-name {
+  font-size: 20px;
+  padding: 0.5rem 0;
+}
+
+.home-destination-reviews {
+  color: #ccc;
+  font-style: italic;
 }
