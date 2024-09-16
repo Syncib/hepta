@@ -2,8 +2,9 @@ import React from 'react'
 
 const Navbar = () => {
   return (
-    <nav class="transparent-navbar ">
-    <div class="nav-brand abril-fatface-regular">Hepta</div>
+    <nav class="navbar ">
+    <div class="nav-brand abril-fatface-600">Hepta</div>
+    <div class="nav-brand abril-fatface-600">Hamburger</div>
 </nav>
   )
 }
