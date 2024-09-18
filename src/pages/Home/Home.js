@@ -6,9 +6,6 @@ import img1 from "../../assets/images/img_1.jpg";
 import img2 from "../../assets/images/img_2.jpg";
 import img3 from "../../assets/images/img_3.jpg";
 import img5 from "../../assets/images/img_5.jpg";
-import person1 from "../../assets/images/person_1.jpg";
-import person2 from "../../assets/images/person_2.jpg";
-import person3 from "../../assets/images/person_3.jpg";
 import { MdOutlineStar } from "react-icons/md";
 import { MdOutlineStarBorder } from "react-icons/md";
 import { MdOutlineStarHalf } from "react-icons/md";
@@ -16,6 +13,7 @@ import "./Home.css";
 import { Carousel } from "../../components/Carousel";
 import Footer from "../../components/Footer";
 import Perks from "../../components/Perks";
+import HappyCustomers from "../../components/HappyCustomers";
 
 export const blogimages = [img1, img2, img3];
 const destinations = [
@@ -23,11 +21,6 @@ const destinations = [
   { img: img2, title: "Resort & Spa", rating: 4.5, reviews: 3239 },
   { img: img3, title: "Hotel Rooms", rating: 4.5, reviews: 3239 },
   { img: img5, title: "Mountain Climbing", rating: 4.5, reviews: 3239 },
-];
-const persons = [
-  { img: person1, name: "Clare Gupta" },
-  { img: person2, name: "Rogie Slater" },
-  { img: person3, name: "John Doe" },
 ];
 const Home = () => {
 
@@ -168,26 +161,7 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <div className="home-customers">
-        <div className="home-customers-heading abril-fatface-regular">
-          Happy Customers
-        </div>
-        <div className="home-customers-reviews">
-          {persons.map((item) => (
-            <div className="customer-review">
-              <img className="customer-img" src={item.img} />
-              <p className="customer-review-text mukta-mahee-regular">
-                “Far far away, behind the word mountains, far from the countries
-                Vokalia and Consonantia, there live the blind texts. Separated
-                they live in Bookmarksgrove right at the coast of the Semantics,
-                a large language ocean.”
-              </p>
-              <p className="customer-name">__{item.name}</p>
-            </div>
-          ))}
-        </div>
-      </div>
-      <div></div>
+      <HappyCustomers/>
       <div className="home-destination">
         <div className="home-destination-text">
           <h3 className="home-destination-heading abril-fatface-regular">

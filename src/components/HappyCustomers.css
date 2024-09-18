@@ -1,0 +1,44 @@
+.home-customers-heading {
+    font-size: 70px;
+    line-height: 1;
+    margin-bottom: 2rem;
+    text-align: center;
+    margin-bottom: 4rem;
+  }
+
+  .home-customers {
+    background-color: #fafafa;
+    padding: 8rem 0;
+  }
+
+  .home-customers-reviews {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 60%;
+    margin: 0 auto;
+    column-gap: 2rem;
+  }
+
+  .customer-img {
+    width: 4rem;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+  }
+  
+  .customer-review-text {
+    line-height: 1.5;
+    font-family: "Mukta Mahee", arial, sans-serif;
+    font-size: 20px;
+    color: #000;
+    font-style: italic;
+  }
+
+  .customer-name {
+    font-weight: 200;
+    font-size: 18px;
+    line-height: 1.8;
+    color: #6c757d;
+    font-family: "Mukta Mahee", arial, sans-serif;
+    font-style: italic;
+    margin-top: 1rem;
+  }

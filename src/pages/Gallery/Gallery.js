@@ -1,13 +1,27 @@
 import React from "react";
 import "./Gallery.css";
+import Footer from "../../components/Footer"
 import Navbar from "../../components/Navbar";
-import slider1 from "../../assets/images/slider-1.jpg";
-import slider2 from "../../assets/images/slider-2.jpg";
-import slider3 from "../../assets/images/slider-3.jpg";
-import slider4 from "../../assets/images/slider-4.jpg";
 import slider5 from "../../assets/images/slider-5.jpg";
 import slider6 from "../../assets/images/slider-6.jpg";
-const images = [slider1, slider2, slider3, slider4, slider5, slider6];
+import slider7 from "../../assets/images/img_3.jpg";
+import slider8 from "../../assets/images/img_5.jpg";
+const images = [
+  slider6,
+  slider5,
+  slider7,
+  slider8,
+  slider7,
+  slider8,
+  slider6,
+  slider5,
+  slider6,
+  slider5,
+  slider7,
+  slider8,
+  slider6,
+  slider5,
+];
 const Gallery = () => {
   return (
     <>
@@ -26,6 +40,7 @@ const Gallery = () => {
           <img className={`gallery-img-${index}`} src={item} />
         ))}
       </div>
+      <Footer/>
     </>
   );
 };
