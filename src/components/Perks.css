@@ -1,0 +1,29 @@
+.basic-grid {
+    max-width: 58%;
+    margin: 4rem auto 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .basic-grid div {
+    width: 100%;
+  }
+  
+  .basic-grid img {
+    width: 19%;
+  }
+  
+  .basic-title {
+    font-size: 1.75rem;
+    padding: 1rem 0;
+  }
+  
+  .basic-desc {
+    font-weight: 200;
+    font-size: 18px;
+    line-height: 1.8;
+    color: #6c757d;
+  }

@@ -2,22 +2,10 @@ import React from "react";
 import Navbar from "../../components/Navbar";
 import { FaPlay } from "react-icons/fa";
 import image1 from "../../assets/images/img_1_long.jpg";
-import breakfast from "../../assets/svg/001-breakfast.svg";
-import travel from "../../assets/svg/002-planet-earth.svg";
-import airplane from "../../assets/svg/003-airplane.svg";
-import beach from "../../assets/svg/004-beach.svg";
-import mountain from "../../assets/svg/005-mountains.svg";
-import ballon from "../../assets/svg/006-hot-air-balloon.svg";
 import img1 from "../../assets/images/img_1.jpg";
 import img2 from "../../assets/images/img_2.jpg";
 import img3 from "../../assets/images/img_3.jpg";
 import img5 from "../../assets/images/img_5.jpg";
-import slider1 from "../../assets/images/slider-1.jpg";
-import slider2 from "../../assets/images/slider-2.jpg";
-import slider3 from "../../assets/images/slider-3.jpg";
-import slider4 from "../../assets/images/slider-4.jpg";
-import slider5 from "../../assets/images/slider-5.jpg";
-import slider6 from "../../assets/images/slider-6.jpg";
 import person1 from "../../assets/images/person_1.jpg";
 import person2 from "../../assets/images/person_2.jpg";
 import person3 from "../../assets/images/person_3.jpg";
@@ -27,20 +15,22 @@ import { MdOutlineStarHalf } from "react-icons/md";
 import "./Home.css";
 import { Carousel } from "../../components/Carousel";
 import Footer from "../../components/Footer";
+import Perks from "../../components/Perks";
+
+export const blogimages = [img1, img2, img3];
+const destinations = [
+  { img: img1, title: "Food & Wines", rating: 4.5, reviews: 3239 },
+  { img: img2, title: "Resort & Spa", rating: 4.5, reviews: 3239 },
+  { img: img3, title: "Hotel Rooms", rating: 4.5, reviews: 3239 },
+  { img: img5, title: "Mountain Climbing", rating: 4.5, reviews: 3239 },
+];
+const persons = [
+  { img: person1, name: "Clare Gupta" },
+  { img: person2, name: "Rogie Slater" },
+  { img: person3, name: "John Doe" },
+];
 const Home = () => {
-  const images = [slider1, slider2, slider3, slider4, slider5, slider6];
-  const blogimages = [img1, img2, img3];
-  const destinations = [
-    { img: img1, title: "Food & Wines", rating: 4.5, reviews: 3239 },
-    { img: img2, title: "Resort & Spa", rating: 4.5, reviews: 3239 },
-    { img: img3, title: "Hotel Rooms", rating: 4.5, reviews: 3239 },
-    { img: img5, title: "Mountain Climbing", rating: 4.5, reviews: 3239 },
-  ];
-  const persons = [
-    { img: person1, name: "Clare Gupta" },
-    { img: person2, name: "Rogie Slater" },
-    { img: person3, name: "John Doe" },
-  ];
+
   const printStars = (rating) => {
     let stars = [];
     for (let i = 0; i < 5; i++) {
@@ -114,68 +104,7 @@ const Home = () => {
             Semantics, a large language ocean.
           </p>
         </div>
-        <div className="home-experience-grid">
-          <div>
-            <img src={breakfast} />
-            <h4 className="home-experience-title abril-fatface-regular">
-              Good Foods
-            </h4>
-            <p className="home-experience-desc mukta-mahee-regular">
-              Far far away, behind the word mountains, far from the countries
-              Vokalia and Consonantia, there live the blind texts.
-            </p>
-          </div>
-          <div>
-            <img src={travel} />
-            <h4 className="home-experience-title abril-fatface-regular">
-              Travel Anywhere
-            </h4>
-            <p className="home-experience-desc mukta-mahee-regular">
-              Far far away, behind the word mountains, far from the countries
-              Vokalia and Consonantia, there live the blind texts.
-            </p>
-          </div>
-          <div>
-            <img src={airplane} />
-            <h4 className="home-experience-title abril-fatface-regular">
-              Airplane
-            </h4>
-            <p className="home-experience-desc mukta-mahee-regular">
-              Far far away, behind the word mountains, far from the countries
-              Vokalia and Consonantia, there live the blind texts.
-            </p>
-          </div>
-          <div>
-            <img src={beach} />
-            <h4 className="home-experience-title abril-fatface-regular">
-              Beach Resort
-            </h4>
-            <p className="home-experience-desc mukta-mahee-regular">
-              Far far away, behind the word mountains, far from the countries
-              Vokalia and Consonantia, there live the blind texts.
-            </p>
-          </div>
-          <div>
-            <img src={mountain} />
-            <h4 className="home-experience-title abril-fatface-regular">
-              Mountain Climbing
-            </h4>
-            <p className="home-experience-desc mukta-mahee-regular">
-              Far far away, behind the word mountains, far from the countries
-              Vokalia and Consonantia, there live the blind texts.
-            </p>
-          </div>
-          <div>
-            <img src={ballon} />
-            <h4 className="home-experience-title abril-fatface-regular">
-              Hot Air Balloon
-            </h4>
-            <p className="home-experience-desc mukta-mahee-regular">
-              Far far away, behind the word mountains, far from the countries
-              Vokalia and Consonantia, there live the blind texts.
-            </p>
-          </div>
-        </div>
+      <Perks/>
       </div>
       <div className="home-tour">
         <div className="home-tour-text text-center">
@@ -194,7 +123,7 @@ const Home = () => {
         </div>
         <div className="carousel-div">
           <div className="home-tour-carousel">
-            <Carousel data={images} />
+            <Carousel />
           </div>
         </div>
 
@@ -293,7 +222,7 @@ const Home = () => {
           ))}
         </div>
       </div>
-    <Footer/>
+      <Footer />
     </>
   );
 };

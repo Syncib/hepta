@@ -1,0 +1,150 @@
+.hotel-hero {
+  background-image: url("../../assets/images/slider-4.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 70vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.hotel-hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: inherit;
+  filter: brightness(0.8);
+  z-index: 1;
+}
+.hotel-hero-text {
+  position: relative;
+  z-index: 2;
+  padding-top: 10rem;
+  text-align: center;
+  color: white;
+}
+.hotel-hero-heading {
+  font-size: 5rem;
+}
+.hotel-hero-subtext {
+  padding-top: 5px;
+  font-size: 1.9rem;
+}
+
+.hotel-perks {
+  padding: 3rem 0;
+}
+
+.hotel-rooms {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 55%;
+  margin: 0 auto;
+  height: fit-content;
+}
+.hotel-rooms-img {
+  width: 50%;
+  min-height: 60vh;
+  object-position: center;
+  object-fit: cover;
+}
+.hotel-rooms-text {
+  text-wrap: pretty;
+  width: 25rem;
+}
+
+.hotel-rooms-heading {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.hotel-rooms-para {
+  font-weight: 200;
+  font-size: 18px;
+  line-height: 1.8;
+  color: #6c757d;
+  margin-bottom: 1rem;
+}
+
+.hotel-button {
+  background: transparent;
+  color: black;
+  border: 2px solid rgb(101, 192, 186);
+  margin: 3rem 0;
+  padding: 0.7rem 2rem;
+  font-weight: 600;
+  border-radius: 3px;
+  letter-spacing: 4px;
+  transition: color 0.5s, background-color 0.5s;
+}
+.hotel-button:hover {
+  color: white;
+  background-color: rgb(101, 192, 186);
+  transition: color 0.5s, background-color 0.5s;
+  cursor: pointer;
+}
+.hotel-div {
+  position: relative;
+}
+.hotel-div::before {
+  content: "";
+  background-color: #e9ecef;
+  position: absolute;
+  bottom: 0;
+  height: 30%;
+  width: 100%;
+}
+
+.more-hotels {
+  background-color: #e9ecef;
+  padding-bottom: 8rem;
+}
+
+.more-hotels-cards {
+  width: 60%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 2rem;
+}
+.more-hotels-card {
+  background-color: white;
+}
+.more-hotels-card img {
+  width: 100%;
+}
+.more-hotels-card-text {
+  padding: 2rem;
+}
+.more-hotels-card-heading {
+  font-size: 26px;
+  font-weight: 500;
+  line-height: 1.2;
+}
+.more-hotels-card-para {
+  font-weight: 200;
+  font-size: 18px;
+  line-height: 1.8;
+  color: #6c757d;
+}
+
+.more-hotels-heading {
+  font-size: 70px;
+  line-height: 1;
+  margin-bottom: 2rem;
+}
+
+.more-hotels-para {
+  font-size: 1.25rem;
+  font-weight: 300;
+  color: rgb(108, 117, 125);
+}
+
+.more-hotels-text {
+  width: 50%;
+  margin: 0 auto;
+  padding: 0 0 4rem;
+}

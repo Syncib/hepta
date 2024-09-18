@@ -1,0 +1,44 @@
+.gallery-hero {
+  background-image: url("../../assets/images/slider-2.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 70vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.gallery-hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: inherit;
+  filter: brightness(0.8);
+  z-index: 1;
+}
+.gallery-hero-text {
+  position: relative;
+  z-index: 2;
+  padding-top: 10rem;
+  text-align: center;
+  color: white;
+}
+.gallery-hero-heading {
+  font-size: 5rem;
+}
+.gallery-hero-subtext {
+  padding-top: 5px;
+  font-size: 1.9rem;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  width: 60%;
+  margin: 9rem auto;
+}
+.gallery-grid img{
+    width: 100%;
+}

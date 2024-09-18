@@ -3,22 +3,28 @@ import {
   MdOutlineKeyboardArrowLeft,
   MdOutlineKeyboardArrowRight,
 } from "react-icons/md";
+import slider1 from "../assets/images/slider-1.jpg";
+import slider2 from "../assets/images/slider-2.jpg";
+import slider3 from "../assets/images/slider-3.jpg";
+import slider4 from "../assets/images/slider-4.jpg";
+import slider5 from "../assets/images/slider-5.jpg";
+import slider6 from "../assets/images/slider-6.jpg";
 import "./Carousel.css";
-
-export const Carousel = ({ data }) => {
+const images = [slider1, slider2, slider3, slider4, slider5, slider6];
+export const Carousel = () => {
   const [slide, setSlide] = useState(0);
 
   const nextSlide = () => {
-    setSlide(slide === data.length - 1 ? 0 : slide + 1);
+    setSlide(slide === images.length - 1 ? 0 : slide + 1);
   };
 
   const prevSlide = () => {
-    setSlide(slide === 0 ? data.length - 1 : slide - 1);
+    setSlide(slide === 0 ? images.length - 1 : slide - 1);
   };
   useEffect(() => {
     const intervalId = setInterval(() => {
       nextSlide();
-    }, 4000); 
+    }, 4000);
 
     return () => clearInterval(intervalId); // Clean up the interval on unmount
   }, [slide]);
@@ -28,7 +34,7 @@ export const Carousel = ({ data }) => {
         onClick={prevSlide}
         className="arrow arrow-left"
       />
-      {data.map((item, idx) => {
+      {images.map((item, idx) => {
         return (
           <img
             src={item}
@@ -44,7 +50,7 @@ export const Carousel = ({ data }) => {
         className="arrow arrow-right"
       />
       <span className="indicators">
-        {data.map((_, idx) => {
+        {images.map((_, idx) => {
           return (
             <button
               key={idx}
