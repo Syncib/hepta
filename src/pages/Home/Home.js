@@ -14,6 +14,7 @@ import { Carousel } from "../../components/Carousel";
 import Footer from "../../components/Footer";
 import Perks from "../../components/Perks";
 import HappyCustomers from "../../components/HappyCustomers";
+import SlideFadeIn from "../../components/SlideFadeIn";
 
 export const blogimages = [img1, img2, img3];
 const destinations = [
@@ -42,22 +43,29 @@ const Home = () => {
       <div className="home-hero">
         <Navbar />
         <div className="home-hero-text">
-          <h1 className="abril-fatface-600 home-hero-heading">
-            Travel & Tours
-          </h1>
-          <p className="home-hero-subtext mukta-mahee-regular ">
-            A free template by <span className="colorlib">Colorlib</span>.
-            Download and share!
-          </p>
-          <button className="home-hero-button mukta-mahee-regular">
-            VISIT COLORLIB
-          </button>
+          <SlideFadeIn>
+            <h1 className="abril-fatface-600 home-hero-heading">
+              Travel & Tours
+            </h1>
+          </SlideFadeIn>
+          <SlideFadeIn>
+            <p className="home-hero-subtext mukta-mahee-regular">
+              A free template by <span className="colorlib">Colorlib</span>.
+              Download and share!
+            </p>
+          </SlideFadeIn>
+          <SlideFadeIn>
+            <button className="home-hero-button mukta-mahee-regular">
+              VISIT COLORLIB
+            </button>
+          </SlideFadeIn>
           <a href="#" className="scroll-down mukta-mahee-regular">
             <FaPlay className="rotate-90" />
             <p className="scroll-text">SCROLL DOWN</p>
           </a>
         </div>
       </div>
+      <SlideFadeIn>
       <div className="home-welcome">
         <img src={image1} className="welcome-img" />
         <div className="welcome-text">
@@ -82,20 +90,25 @@ const Home = () => {
           </div>
         </div>
       </div>
+      </SlideFadeIn>
       <div className="home-experience text-center">
         <div className="home-experience-text">
-          <h3 className="home-experience-heading abril-fatface-regular">
-            Experience Once In Your Life Time
-          </h3>
-          <p className="home-experience-para mukta-mahee-regular">
-            Far far away, behind the word mountains, far from the countries
-            Vokalia and Consonantia,
-            <br />
-            there live the blind texts. Separated they live in Bookmarksgrove
-            right at the coast of the
-            <br />
-            Semantics, a large language ocean.
-          </p>
+          <SlideFadeIn>
+            <h3 className="home-experience-heading abril-fatface-regular">
+              Experience Once In Your Life Time
+            </h3>
+          </SlideFadeIn>
+          <SlideFadeIn>
+            <p className="home-experience-para mukta-mahee-regular">
+              Far far away, behind the word mountains, far from the countries
+              Vokalia and Consonantia,
+              <br />
+              there live the blind texts. Separated they live in Bookmarksgrove
+              right at the coast of the
+              <br />
+              Semantics, a large language ocean.
+            </p>
+          </SlideFadeIn>
         </div>
       <Perks/>
       </div>

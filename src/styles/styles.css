@@ -3,12 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
-.navbar {
-    background-color: transparent;
-    display: flex;
-    justify-content: space-between;
-    padding: 0 9rem;
-  }
+
   .abril-fatface-regular {
     font-family: "Abril Fatface", serif;
     font-weight: 400;
@@ -25,16 +20,30 @@
     font-weight: 200;
     font-style: normal;
   }
-  
-.nav-brand {
-    padding-left: 1.5rem;
-    font-size: 2rem;
-    color: white;
-    padding-top: 50px;
-    z-index: 2;
-    position: relative; /* Keeps the text above the darkened background */
-}
+
 
 .text-center{
     text-align: center;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.slide-fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+.slide-fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
 }

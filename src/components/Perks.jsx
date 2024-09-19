@@ -9,26 +9,30 @@ import "./Perks.css";
 const Perks = () => {
   return (
     <div className="basic-grid">
-          <div>
-            <img src={breakfast} />
-            <h4 className="basic-title abril-fatface-regular">
-              Good Foods
-            </h4>
-            <p className="basic-desc mukta-mahee-regular">
-              Far far away, behind the word mountains, far from the countries
-              Vokalia and Consonantia, there live the blind texts.
-            </p>
-          </div>
-          <div>
-            <img src={travel} />
-            <h4 className="basic-title abril-fatface-regular">
-              Travel Anywhere
-            </h4>
-            <p className="basic-desc mukta-mahee-regular">
-              Far far away, behind the word mountains, far from the countries
-              Vokalia and Consonantia, there live the blind texts.
-            </p>
-          </div>
+          <SlideFadeIn>
+            <div>
+              <img src={breakfast} />
+              <h4 className="basic-title abril-fatface-regular">
+                Good Foods
+              </h4>
+              <p className="basic-desc mukta-mahee-regular">
+                Far far away, behind the word mountains, far from the countries
+                Vokalia and Consonantia, there live the blind texts.
+              </p>
+            </div>
+          </SlideFadeIn>
+          <SlideFadeIn>
+            <div>
+              <img src={travel} />
+              <h4 className="basic-title abril-fatface-regular">
+                Travel Anywhere
+              </h4>
+              <p className="basic-desc mukta-mahee-regular">
+                Far far away, behind the word mountains, far from the countries
+                Vokalia and Consonantia, there live the blind texts.
+              </p>
+            </div>
+          </SlideFadeIn>
           <div>
             <img src={airplane} />
             <h4 className="basic-title abril-fatface-regular">
