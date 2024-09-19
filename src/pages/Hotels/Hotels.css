@@ -21,7 +21,7 @@
 .hotel-hero-text {
   position: relative;
   z-index: 2;
-  padding-top: 10rem;
+  padding-top: 5rem;
   text-align: center;
   color: white;
 }
@@ -147,4 +147,35 @@
   width: 50%;
   margin: 0 auto;
   padding: 0 0 4rem;
+}
+
+@media only screen and (max-width: 600px) {
+  .hotel-hero-text {
+    padding: 0;
+  }
+  .hotel-rooms{
+    flex-direction: column;
+    max-width: 80%;
+  }
+  .hotel-rooms-img{
+    width: 100%;
+  }
+  .more-hotels-text{
+   width: 80%;
+  }
+  .more-hotels-cards{
+    grid-template-columns: 1fr;
+    width: 80%;
+    row-gap: 1rem;
+  }
+}
+
+
+@media only screen and (min-width: 601px) and (max-width: 992px) {
+  
+}
+
+
+@media only screen and (min-width: 993px) {
+ 
 }

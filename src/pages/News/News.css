@@ -21,7 +21,7 @@
 .news-hero-text {
   position: relative;
   z-index: 2;
-  padding-top: 10rem;
+  padding-top: 5rem;
   text-align: center;
   color: white;
 }
@@ -141,7 +141,6 @@
 }
 .page-numbers{
   display: flex;
-  width: 60%;
   margin: 0 auto;
   padding-bottom: 4rem;
 }
@@ -163,4 +162,21 @@
   background-color: transparent;
   border: 2px solid #e9ecef;
 
+}
+@media only screen and (max-width: 992px) {
+  .news-grid {
+    grid-template-columns: 1fr
+  }
+  .news-area{
+    flex-direction: column;
+    width: 90%;
+  }
+  .news-search {
+    width: 150%;
+  }
+}
+
+
+@media only screen and (min-width: 993px) {
+ 
 }

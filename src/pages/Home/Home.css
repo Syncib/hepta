@@ -168,7 +168,6 @@
   text-wrap: pretty;
 }
 
-.home-tour,
 .home-blog {
   padding: 8rem 0;
 }
@@ -305,4 +304,29 @@
 .home-destination-reviews {
   color: #ccc;
   font-style: italic;
+}
+
+
+@media only screen and (max-width: 600px) {
+  .home-welcome{
+    flex-direction: column;
+    margin: 20rem auto;
+  }
+  .home-tour-text,.home-blog-text {
+    width: 80%;
+  }
+  .home-blog-cards,.home-destination-grid{
+    grid-template-columns: 1fr;
+    row-gap: 1rem;
+  }
+}
+
+
+@media only screen and (min-width: 601px) and (max-width: 992px) {
+
+}
+
+
+@media only screen and (min-width: 993px) {
+ 
 }

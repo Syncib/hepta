@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import './Navbar.css'; // Import CSS styles
 
 const Navbar = () => {
@@ -20,12 +21,12 @@ const Navbar = () => {
       </nav>
       <div className={`menu-overlay ${isOpen ? 'menu-open' : ''}`}>
         <ul className="menu">
-          <li>Home</li>
-          <li>Hotels</li>
-          <li>About Us</li>
-          <li>Gallery</li>
-          <li>News</li>
-          <li>Contact</li>
+          <li><Link to="/">Home</Link></li>
+          <li><Link to="/hotels">Hotels</Link></li>
+          <li><Link to="/about">About Us</Link></li>
+          <li><Link to="/gallery">Gallery</Link></li>
+          <li><Link to="/news">News</Link></li>
+          <li><Link to="/contact">Contact</Link></li>
         </ul>
       </div>
     </>

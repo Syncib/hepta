@@ -6,6 +6,7 @@ import slider5 from "../../assets/images/slider-5.jpg";
 import slider6 from "../../assets/images/slider-6.jpg";
 import slider7 from "../../assets/images/img_3.jpg";
 import slider8 from "../../assets/images/img_5.jpg";
+import SlideFadeIn from "../../components/SlideFadeIn";
 const images = [
   slider6,
   slider5,
@@ -28,11 +29,15 @@ const Gallery = () => {
       <div className="gallery-hero">
         <Navbar />
         <div className="gallery-hero-text">
-          <h1 className="abril-fatface-600 gallery-hero-heading">Gallery</h1>
-          <p className="gallery-hero-subtext mukta-mahee-regular ">
-            A free template by <span className="colorlib">Colorlib</span>.
-            Download and share!
-          </p>
+          <SlideFadeIn>
+            <h1 className="abril-fatface-600 gallery-hero-heading">Gallery</h1>
+          </SlideFadeIn>
+          <SlideFadeIn>
+            <p className="gallery-hero-subtext mukta-mahee-regular ">
+              A free template by <span className="colorlib">Colorlib</span>.
+              Download and share!
+            </p>
+          </SlideFadeIn>
         </div>
       </div>
       <div className="gallery-grid">

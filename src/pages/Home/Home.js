@@ -114,31 +114,13 @@ const Home = () => {
       </div>
       <div className="home-tour">
         <div className="home-tour-text text-center">
-          <h2 className="home-tour-heading abril-fatface-regular">
-            International Tour Management.
-          </h2>
-          <p className="home-tour-para mukta-mahee-regular">
-            Far far away, behind the word mountains, far from the countries
-            Vokalia and Consonantia,
-            <br />
-            there live the blind texts. Separated they live in Bookmarksgrove
-            right at the coast of the
-            <br />
-            Semantics, a large language ocean.
-          </p>
-        </div>
-        <div className="carousel-div">
-          <div className="home-tour-carousel">
-            <Carousel />
-          </div>
-        </div>
-
-        <div className="home-blog">
-          <div className="home-blog-text text-center">
-            <h2 className="home-blog-heading abril-fatface-regular">
-              Recent Blog Post
+          <SlideFadeIn>
+            <h2 className="home-tour-heading abril-fatface-regular">
+              International Tour Management.
             </h2>
-            <p className="home-blog-para mukta-mahee-regular">
+          </SlideFadeIn>
+          <SlideFadeIn>
+            <p className="home-tour-para mukta-mahee-regular">
               Far far away, behind the word mountains, far from the countries
               Vokalia and Consonantia,
               <br />
@@ -147,29 +129,59 @@ const Home = () => {
               <br />
               Semantics, a large language ocean.
             </p>
+          </SlideFadeIn>
+        </div>
+        <div className="carousel-div">
+          <div className="home-tour-carousel">
+            <SlideFadeIn>
+              <Carousel />
+            </SlideFadeIn>
+          </div>
+        </div>
+
+        <div className="home-blog">
+          <div className="home-blog-text text-center">
+            <SlideFadeIn>
+              <h2 className="home-blog-heading abril-fatface-regular">
+                Recent Blog Post
+              </h2>
+            </SlideFadeIn>
+            <SlideFadeIn>
+              <p className="home-blog-para mukta-mahee-regular">
+                Far far away, behind the word mountains, far from the countries
+                Vokalia and Consonantia,
+                <br />
+                there live the blind texts. Separated they live in Bookmarksgrove
+                right at the coast of the
+                <br />
+                Semantics, a large language ocean.
+              </p>
+            </SlideFadeIn>
           </div>
           <div className="home-blog-cards">
-            {blogimages.map((item) => (
-              <div className="home-blog-card">
-                <img src={item} />
-                <div className="home-blog-card-text">
-                  <p className="home-blog-card-date mukta-mahee-regular">
-                    February 26, 2018
-                  </p>
-                  <h3 className="home-blog-card-heading abril-fatface-regular">
-                    45 Best Places To
-                    <br />
-                    Unwind
-                  </h3>
-                  <p className="home-blog-card-para mukta-mahee-regular">
-                    Far far away, behind the word
-                    <br />
-                    mountains, far from the countries
-                    <br />
-                    Vokalia and Consonantia, there live the blind texts.
-                  </p>
+            {blogimages.map((item) => (<SlideFadeIn>
+              
+                <div className="home-blog-card">
+                  <img src={item} />
+                  <div className="home-blog-card-text">
+                    <p className="home-blog-card-date mukta-mahee-regular">
+                      February 26, 2018
+                    </p>
+                    <h3 className="home-blog-card-heading abril-fatface-regular">
+                      45 Best Places To
+                      <br />
+                      Unwind
+                    </h3>
+                    <p className="home-blog-card-para mukta-mahee-regular">
+                      Far far away, behind the word
+                      <br />
+                      mountains, far from the countries
+                      <br />
+                      Vokalia and Consonantia, there live the blind texts.
+                    </p>
+                  </div>
                 </div>
-              </div>
+            </SlideFadeIn>
             ))}
           </div>
         </div>
@@ -192,20 +204,22 @@ const Home = () => {
         </div>
         <div className="home-destination-grid">
           {destinations.map((item) => (
-            <div className="home-destination-item">
-              <img className="home-destination-img" src={item.img} />
-              <p className="home-destination-name abril-fatface-regular">
-                {item.title}
-              </p>
-              <div className="home-destination-ratings">
-                <div className="home-destination-stars">
-                  {printStars(item.rating)}
-                </div>
-                <div className="home-destination-reviews mukta-mahee-regular">
-                  {item.reviews} reviews
+            <SlideFadeIn>
+              <div className="home-destination-item">
+                <img className="home-destination-img" src={item.img} />
+                <p className="home-destination-name abril-fatface-regular">
+                  {item.title}
+                </p>
+                <div className="home-destination-ratings">
+                  <div className="home-destination-stars">
+                    {printStars(item.rating)}
+                  </div>
+                  <div className="home-destination-reviews mukta-mahee-regular">
+                    {item.reviews} reviews
+                  </div>
                 </div>
               </div>
-            </div>
+            </SlideFadeIn>
           ))}
         </div>
       </div>

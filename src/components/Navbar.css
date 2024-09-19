@@ -93,3 +93,31 @@
     color: rgb(101, 192, 186)
   }
   
+
+
+@media only screen and (max-width: 600px) {
+  .navbar {
+    padding: 50px 1rem;
+  }
+  .hamburger-icon.open{
+    position: fixed;
+    right: 48px;
+  }
+}
+
+
+@media only screen and (min-width: 601px) and (max-width: 992px) {
+  .navbar {
+    padding: 50px 1rem;
+  }
+  .hamburger-icon.open{
+    position: fixed;
+    right: 48px;
+  }
+}
+
+
+@media only screen and (min-width: 993px) {
+ 
+}
+

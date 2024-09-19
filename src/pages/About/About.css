@@ -21,7 +21,7 @@
 .about-hero-text {
   position: relative;
   z-index: 2;
-  padding-top: 10rem;
+  padding-top: 5rem;
   text-align: center;
   color: white;
 }
@@ -137,3 +137,22 @@
 .team-person-name {
   font-size: 26px;
 }
+
+@media only screen and (max-width:  992px) {
+  .about-hero-text{
+    padding: 0;
+  }
+  .about-welcome{
+    flex-direction: column;
+    margin: 15rem auto;
+
+  }
+  .about-welcome-img{
+    width: 80vw;
+  }
+  .team-grid{
+    grid-template-columns: 1fr;
+  }}
+
+
+
