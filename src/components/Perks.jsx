@@ -6,6 +6,7 @@ import beach from "../assets/svg/004-beach.svg";
 import mountain from "../assets/svg/005-mountains.svg";
 import ballon from "../assets/svg/006-hot-air-balloon.svg";
 import "./Perks.css";
+import SlideFadeIn from './SlideFadeIn';
 const Perks = () => {
   return (
     <div className="basic-grid">
