@@ -310,7 +310,7 @@
 @media only screen and (max-width: 600px) {
   .home-welcome{
     flex-direction: column;
-    margin: 20rem auto;
+    margin: 7rem auto;
   }
   .home-tour-text,.home-blog-text {
     width: 80%;
@@ -319,6 +319,15 @@
     grid-template-columns: 1fr;
     row-gap: 1rem;
   }
+  .home-tour-heading,
+.home-blog-heading {
+  font-size: 40px;
+
+}
+.welcome-img {
+  height: 70%;
+  width: 100vw;
+}
 }
 
 

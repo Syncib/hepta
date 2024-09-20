@@ -31,7 +31,7 @@ const News = () => {
             {images.map((item) => (
               <SlideFadeIn>
                 <div className="news-card">
-                  <img src={item} />
+                  <img src={item} alt="news-item"/>
                   <div className="news-card-text">
                     <p className="news-date mukta-mahee-regular">
                       February 26, 2018
@@ -79,7 +79,7 @@ const News = () => {
                   index < 5 && (
                     <SlideFadeIn>
                       <div className="popular-post">
-                        <img src={item} />
+                        <img src={item} alt="post-item"/>
                         <div className="popular-post-text">
                           <p className="popular-post-date mukta-mahee-regular">
                             February 27, 2018

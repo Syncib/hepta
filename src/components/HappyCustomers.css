@@ -48,6 +48,9 @@
       grid-template-columns: 1fr;
       row-gap: 1rem;
     }
+    .home-customers-heading {
+      font-size: 40px;
+    }
   }
   
   

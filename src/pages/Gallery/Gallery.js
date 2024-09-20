@@ -42,7 +42,7 @@ const Gallery = () => {
       </div>
       <div className="gallery-grid">
         {images.map((item, index) => (
-          <img className={`gallery-img-${index}`} src={item} />
+          <img className={`gallery-img-${index}`} src={item} alt="gallery-item"/>
         ))}
       </div>
       <Footer/>

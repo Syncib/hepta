@@ -12,7 +12,7 @@ const Perks = () => {
     <div className="basic-grid">
           <SlideFadeIn>
             <div>
-              <img src={breakfast} />
+              <img src={breakfast} alt='breakfast' />
               <h4 className="basic-title abril-fatface-regular">
                 Good Foods
               </h4>
@@ -24,7 +24,7 @@ const Perks = () => {
           </SlideFadeIn>
           <SlideFadeIn>
             <div>
-              <img src={travel} />
+              <img src={travel} alt='travel' />
               <h4 className="basic-title abril-fatface-regular">
                 Travel Anywhere
               </h4>
@@ -35,7 +35,7 @@ const Perks = () => {
             </div>
           </SlideFadeIn>
           <div>
-            <img src={airplane} />
+            <img src={airplane} alt='airplane' />
             <h4 className="basic-title abril-fatface-regular">
               Airplane
             </h4>
@@ -45,7 +45,7 @@ const Perks = () => {
             </p>
           </div>
           <div>
-            <img src={beach} />
+            <img src={beach} alt='beach' />
             <h4 className="basic-title abril-fatface-regular">
               Beach Resort
             </h4>
@@ -55,7 +55,7 @@ const Perks = () => {
             </p>
           </div>
           <div>
-            <img src={mountain} />
+            <img src={mountain} alt='mountain' />
             <h4 className="basic-title abril-fatface-regular">
               Mountain Climbing
             </h4>
@@ -65,7 +65,7 @@ const Perks = () => {
             </p>
           </div>
           <div>
-            <img src={ballon} />
+            <img src={ballon} alt='baloon' />
             <h4 className="basic-title abril-fatface-regular">
               Hot Air Balloon
             </h4>

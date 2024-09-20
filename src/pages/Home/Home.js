@@ -162,7 +162,7 @@ const Home = () => {
             {blogimages.map((item) => (<SlideFadeIn>
               
                 <div className="home-blog-card">
-                  <img src={item} />
+                  <img src={item} alt="blog-item"/>
                   <div className="home-blog-card-text">
                     <p className="home-blog-card-date mukta-mahee-regular">
                       February 26, 2018
@@ -206,7 +206,7 @@ const Home = () => {
           {destinations.map((item) => (
             <SlideFadeIn>
               <div className="home-destination-item">
-                <img className="home-destination-img" src={item.img} />
+                <img className="home-destination-img" src={item.img} alt="destination-item"/>
                 <p className="home-destination-name abril-fatface-regular">
                   {item.title}
                 </p>

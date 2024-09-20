@@ -30,7 +30,7 @@ const Hotels = () => {
       </div>
       <div className="hotel-info">
         <div className="hotel-rooms">
-          <img src={image1} className="hotel-rooms-img" />
+          <img src={image1} className="hotel-rooms-img" alt="hotel-item"/>
           <div className="hotel-rooms-text">
             <SlideFadeIn>
               <h3 className="hotel-rooms-heading abril-fatface-regular">
@@ -85,7 +85,7 @@ const Hotels = () => {
               </button>
             </SlideFadeIn>
           </div>
-          <img src={image2} className="hotel-rooms-img" />
+          <img src={image2} className="hotel-rooms-img" alt="hotel-item" />
         </div>
       </div>
       <div className="hotel-div">
@@ -116,7 +116,7 @@ const Hotels = () => {
           {blogimages.map((item) => (
             <SlideFadeIn>
               <div className="more-hotels-card">
-                <img src={item} />
+                <img src={item} alt="hotel-item"/>
                 <div className="more-hotels-card-text">
                   <h3 className="more-hotels-card-heading abril-fatface-regular">
                     Five Reasons to Stay at

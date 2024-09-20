@@ -21,7 +21,7 @@ const HappyCustomers = () => {
       {persons.map((item) => (
         <SlideFadeIn>
           <div className="customer-review">
-            <img className="customer-img" src={item.img} />
+            <img className="customer-img" src={item.img} alt='customer'/>
             <p className="customer-review-text mukta-mahee-regular">
               “Far far away, behind the word mountains, far from the countries
               Vokalia and Consonantia, there live the blind texts. Separated
