@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useCallback, useEffect, useState } from "react";
 import {
   MdOutlineKeyboardArrowLeft,
   MdOutlineKeyboardArrowRight,
@@ -14,9 +14,9 @@ const images = [slider1, slider2, slider3, slider4, slider5, slider6];
 export const Carousel = () => {
   const [slide, setSlide] = useState(0);
 
-  const nextSlide = () => {
+  const nextSlide = useCallback(() => {
     setSlide(slide === images.length - 1 ? 0 : slide + 1);
-  };
+  },[]);
 
   const prevSlide = () => {
     setSlide(slide === 0 ? images.length - 1 : slide - 1);
@@ -27,7 +27,7 @@ export const Carousel = () => {
     }, 4000);
 
     return () => clearInterval(intervalId); // Clean up the interval on unmount
-  }, [slide,nextSlide]);
+  }, [slide, nextSlide]);
   return (
     <div className="carousel">
       <MdOutlineKeyboardArrowLeft
@@ -41,7 +41,8 @@ export const Carousel = () => {
             key={idx}
             className={
               slide === idx ? "slide slide-visible" : "slide slide-hidden"
-            } alt="slide-imgc"
+            }
+            alt="slide-imgc"
           />
         );
       })}
