@@ -24,7 +24,6 @@ const destinations = [
   { img: img5, title: "Mountain Climbing", rating: 4.5, reviews: 3239 },
 ];
 const Home = () => {
-
   const printStars = (rating) => {
     let stars = [];
     for (let i = 0; i < 5; i++) {
@@ -66,30 +65,30 @@ const Home = () => {
         </div>
       </div>
       <SlideFadeIn>
-      <div className="home-welcome">
-        <img src={image1} className="welcome-img" />
-        <div className="welcome-text">
-          <h3 className="welcome-heading abril-fatface-regular">
-            Welcome To Our Website
-          </h3>
-          <p className="welcome-para mukta-mahee-regular">
-            Far far away, behind the word mountains, far from the countries
-            Vokalia and Consonantia, there live the blind texts. Separated they
-            live in Bookmarksgrove right at the coast of the Semantics, a large
-            language ocean.
-          </p>
-          <p className="welcome-para mukta-mahee-regular">
-            A small river named Duden flows by their place and supplies it with
-            the necessary regelialia.
-          </p>
-          <div className="welcome-watch mukta-mahee-regular">
-            <div className="welcome-play">
-              <FaPlay />
+        <div className="home-welcome">
+          <img src={image1} className="welcome-img" />
+          <div className="welcome-text">
+            <h3 className="welcome-heading abril-fatface-regular">
+              Welcome To Our Website
+            </h3>
+            <p className="welcome-para mukta-mahee-regular">
+              Far far away, behind the word mountains, far from the countries
+              Vokalia and Consonantia, there live the blind texts. Separated
+              they live in Bookmarksgrove right at the coast of the Semantics, a
+              large language ocean.
+            </p>
+            <p className="welcome-para mukta-mahee-regular">
+              A small river named Duden flows by their place and supplies it
+              with the necessary regelialia.
+            </p>
+            <div className="welcome-watch mukta-mahee-regular">
+              <div className="welcome-play">
+                <FaPlay />
+              </div>
+              <span>WATCH THE VIDEO</span>
             </div>
-            <span>WATCH THE VIDEO</span>
           </div>
         </div>
-      </div>
       </SlideFadeIn>
       <div className="home-experience text-center">
         <div className="home-experience-text">
@@ -110,7 +109,7 @@ const Home = () => {
             </p>
           </SlideFadeIn>
         </div>
-      <Perks/>
+        <Perks />
       </div>
       <div className="home-tour">
         <div className="home-tour-text text-center">
@@ -133,9 +132,7 @@ const Home = () => {
         </div>
         <div className="carousel-div">
           <div className="home-tour-carousel">
-            <SlideFadeIn>
-              <Carousel />
-            </SlideFadeIn>
+            <Carousel />
           </div>
         </div>
 
@@ -151,18 +148,18 @@ const Home = () => {
                 Far far away, behind the word mountains, far from the countries
                 Vokalia and Consonantia,
                 <br />
-                there live the blind texts. Separated they live in Bookmarksgrove
-                right at the coast of the
+                there live the blind texts. Separated they live in
+                Bookmarksgrove right at the coast of the
                 <br />
                 Semantics, a large language ocean.
               </p>
             </SlideFadeIn>
           </div>
           <div className="home-blog-cards">
-            {blogimages.map((item) => (<SlideFadeIn>
-              
+            {blogimages.map((item) => (
+              <SlideFadeIn>
                 <div className="home-blog-card">
-                  <img src={item} alt="blog-item"/>
+                  <img src={item} alt="blog-item" />
                   <div className="home-blog-card-text">
                     <p className="home-blog-card-date mukta-mahee-regular">
                       February 26, 2018
@@ -181,12 +178,12 @@ const Home = () => {
                     </p>
                   </div>
                 </div>
-            </SlideFadeIn>
+              </SlideFadeIn>
             ))}
           </div>
         </div>
       </div>
-      <HappyCustomers/>
+      <HappyCustomers />
       <div className="home-destination">
         <div className="home-destination-text">
           <h3 className="home-destination-heading abril-fatface-regular">
@@ -206,7 +203,11 @@ const Home = () => {
           {destinations.map((item) => (
             <SlideFadeIn>
               <div className="home-destination-item">
-                <img className="home-destination-img" src={item.img} alt="destination-item"/>
+                <img
+                  className="home-destination-img"
+                  src={item.img}
+                  alt="destination-item"
+                />
                 <p className="home-destination-name abril-fatface-regular">
                   {item.title}
                 </p>

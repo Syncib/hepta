@@ -27,7 +27,7 @@ export const Carousel = () => {
     }, 4000);
 
     return () => clearInterval(intervalId); // Clean up the interval on unmount
-  }, [slide]);
+  }, [slide,nextSlide]);
   return (
     <div className="carousel">
       <MdOutlineKeyboardArrowLeft
@@ -41,7 +41,7 @@ export const Carousel = () => {
             key={idx}
             className={
               slide === idx ? "slide slide-visible" : "slide slide-hidden"
-            }
+            } alt="slide-imgc"
           />
         );
       })}
